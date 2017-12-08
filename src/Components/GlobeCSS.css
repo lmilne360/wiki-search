@@ -1,0 +1,29 @@
+.globe {
+  border: 2px solid #8bc34a;
+  border-radius: 50%;
+  height: 140px;
+  left: 50%;
+  overflow: hidden;
+  /* position: absolute;
+  top: 50%; */
+  position: relative;
+  top: 65px;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  /* background-color: blue; */
+}
+.globe svg {
+  animation: rotation 5s linear 0s infinite;
+}
+.globe svg path {
+  fill: #64833f;
+  stroke: #64833f;
+}
+@keyframes rotation {
+  from {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-50%);
+  }
+}
